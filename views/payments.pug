@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p Esta es la página de pagos
+  form(action='/pagos/nuevo', method='POST')
+    p
+      | Nombre: 
+      input(type='text', name='name', value='')
+    p
+      | Phone: 
+      input(type='text', name='phone', value='')
+    p
+      input(type='submit', value='Submit')
